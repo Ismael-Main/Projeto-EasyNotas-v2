@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.homeCtn {
+  height: 40rem;
+}
+
+.bannerCtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url(/src/img/bk-banner1.png);
+  background-position: center center;
+  background-size: cover;
+  transition: 0.5s;
+  opacity: 1;
+  z-index: 100;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba (0, 0, 0, 0.4);
+}
+
+.titulos {
+  color: #000;
+  font-family: 'Dancing Script', cursive;
+  max-width: 10rem;
+  margin: 4rem auto;
+  font-size: 1.7rem;
+}
+.titulo1,
+.titulo2,
+.titulo3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 15px;
+  background-color: var(--cinzaTransparente);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.titulo1 {
+  background: #f63294;
+}
+.titulo2 {
+  background: #bbc904;
+}
+.titulo3 {
+  background: #dc762b;
+}
+.botaoCriarHomeCtn {
+  margin: 0 auto;
+  position: relative;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 670px) {
+  .homeCtn {
+    height: 30rem;
+  }
+  .titulos {
+    font-size: 1rem;
+  }
+  .titulo1,
+  .titulo2,
+  .titulo3 {
+    margin-top: 10px;
+    padding: 1.2rem;
+  }
+  .botaoCriarHomeCtn {
+    font-size: 1rem;
+  }
+  .botaoCriarHome {
+    width: 160px;
+    padding: 15px 20px 15px 20px;
+    font-size: 1.3rem;
+  }
+}

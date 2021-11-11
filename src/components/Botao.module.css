@@ -1,0 +1,107 @@
+/*Botao banner*/
+.botao {
+  position: relative;
+  color: #fff;
+  background: #1fa2ff;
+  background: #1a2980;
+  background: -webkit-linear-gradient(to right, #26d0ce, #1a2980);
+  background: linear-gradient(to right, #26d0ce, #1a2980);
+  display: inline-block;
+  padding: 11px 20px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  border: none;
+}
+.botao:hover {
+  color: #ffff;
+  background: #1a2980;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* animaçao bordas usando span */
+.botao span {
+  background: var(--verdeClaro);
+  position: absolute;
+  display: block;
+}
+.botao span:nth-child(1) {
+  width: 2px;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+  transition-delay: 0.2s;
+}
+.botao:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  transition-delay: 0.2s;
+}
+
+/*bottom*/
+.botao span:nth-child(2) {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+  transition-delay: 0.2s;
+}
+.botao:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+  transition-delay: 0.2s;
+}
+
+.botao span:nth-child(3) {
+  width: 2px;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+  transition-delay: 0.2s;
+}
+.botao:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  transition-delay: 0.2s;
+}
+.botao span:nth-child(4) {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+  transition-delay: 0.2s;
+}
+.botao:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 0.5s;
+  transition-delay: 0.2s;
+}
+@media (max-width: 670px) {
+  .botao {
+    padding: 8px 10px;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.7px;
+    font-weight: bold;
+    border: none;
+  }
+}

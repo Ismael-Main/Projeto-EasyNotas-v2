@@ -1,0 +1,76 @@
+.avisoCtn {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+}
+.aviso {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 260px;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: #d6d6d6;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.aviso img {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+}
+.aviso h1 {
+  font-size: 1.3rem;
+  color: var(--azulNegro);
+}
+.aviso p {
+  margin-top: 20px;
+  padding: 10px;
+  color: var(--azulNegro);
+  font-weight: bolder;
+}
+.btnCancelar {
+  margin-right: 10px;
+  border: 1px solid green;
+}
+.btnApagar {
+  border: 1px solid red;
+}
+.btnCancelar:hover {
+  background-color: green;
+  color: #fff;
+}
+.btnApagar:hover {
+  background-color: red;
+  color: #fff;
+}
+.btnCancelar,
+.btnApagar {
+  position: relative;
+  bottom: -30px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: var(--azulNegro);
+  font-size: 0.775rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}

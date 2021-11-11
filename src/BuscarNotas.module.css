@@ -1,0 +1,25 @@
+.notasEncontradasCtn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+
+.notasEncontradas {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  grid-gap: 1.5rem;
+}
+
+@media (max-width: 450px) {
+  .notasEncontradas {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

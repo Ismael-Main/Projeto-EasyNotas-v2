@@ -1,0 +1,14 @@
+.menuLista {
+  display: flex;
+}
+.menuLista li {
+  padding-left: 14px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .menuLista {
+    display: none;
+  }
+}

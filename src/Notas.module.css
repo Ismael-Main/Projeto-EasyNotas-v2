@@ -1,0 +1,11 @@
+.NotasCtn {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.37);
+  margin-bottom: 2rem;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+}

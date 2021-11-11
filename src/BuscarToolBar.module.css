@@ -1,0 +1,57 @@
+.buscarToolBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 5rem;
+}
+.buscarToolBarInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.buscarToolBarInput input {
+  font-size: 1rem;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid var(--azulEscuro);
+  margin: 0px 10px;
+  background: transparent;
+  color: #000;
+}
+.buscarToolBarInput input::placeholder {
+  color: #000;
+}
+.buscarToolBarInput input:hover,
+.buscarToolBarInput input:focus {
+  transition: 0.4s;
+  outline: none;
+  border: 2px solid var(--verdeClaro);
+}
+.buscarToolBarInput span::after {
+  content: '';
+  position: absolute;
+  background: var(--cinza3);
+  height: 33px;
+  width: 2px;
+  margin: 0 10px;
+}
+
+.buscarToolBarInput button {
+  margin: 10px 0 10px 25px;
+  border: none;
+  width: 40px;
+  border-radius: 4px;
+  padding: 3px;
+  background: transparent;
+}
+
+.buscarToolBarInput button:hover,
+.buscarToolBarInput button:focus {
+  transition: 0.4s;
+  outline: none;
+  cursor: pointer;
+  background: var(--azulEscuro);
+}

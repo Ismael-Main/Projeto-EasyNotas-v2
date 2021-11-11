@@ -1,0 +1,12 @@
+.erro {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  color: var(--azulNegro);
+  text-align: center;
+}
+@media (max-width: 630px) {
+  .erro {
+    margin: 2rem 0;
+    font-size: 0.875rem;
+  }
+}

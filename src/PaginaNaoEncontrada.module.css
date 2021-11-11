@@ -1,0 +1,22 @@
+.erroPagina {
+  margin-top: 5rem;
+}
+.erroPagina h1 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+.erroPagina p {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+@media (max-width: 980px) {
+  .erroPagina h1 {
+    font-size: 1.1rem;
+  }
+  .erroPagina p {
+    font-size: 0.875rem;
+  }
+}
