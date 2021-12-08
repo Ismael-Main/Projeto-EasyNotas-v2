@@ -1,6 +1,6 @@
 # Projeto-EasyNotas
 
-Este é o meu projeto pessoal, uma aplicação web que cria, salva e busca notas, a mesma foi desenvolvida do zero apenas usando React.js e Redux.
+Este é o meu projeto pessoal, uma aplicação web que cria, salva, edita e busca notas, a mesma foi desenvolvida do zero apenas usando React.js e Redux.
 
 -Funcionalidades-
 
