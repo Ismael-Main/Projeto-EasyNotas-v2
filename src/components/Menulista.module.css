@@ -1,0 +1,46 @@
+.menuLista {
+  display: flex;
+  height: 40px;
+  animation: surgirDireita 0.3s;
+}
+.menuLista li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.menuLista li a {
+  color: #eeee;
+  transition: 0.4s;
+}
+.menuLista li::after {
+  content: '';
+  display: inline-block;
+  background-color: #c4c4c4;
+  width: 1px;
+  height: 18px;
+  margin: 0 15px 0 15px;
+}
+.menuLista li:nth-child(3)::after {
+  width: 1px;
+  display: none;
+}
+.menuLista li a:hover {
+  color: var(--verdeClaro);
+  transition: 0.4s;
+}
+@media (max-width: 900px) {
+  .menuLista {
+    display: none;
+  }
+}
+@keyframes surgirDireita {
+  0% {
+    opacity: 0;
+    margin-right: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0px;
+  }
+}

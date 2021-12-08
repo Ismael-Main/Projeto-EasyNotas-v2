@@ -1,0 +1,77 @@
+.sobreCtn {
+  background: #f8f8f8;
+  border-radius: 10px;
+  margin: 30px 38px;
+}
+
+.texto {
+  margin: 30px auto 0 auto;
+  width: 400px;
+  height: 200px;
+  text-align: left;
+  line-height: 20px;
+  background-color: #e5e5e5;
+  animation: surgir 1.5s;
+}
+.texto p {
+  font-size: 14px;
+  padding: 10px;
+  color: #505050;
+}
+.texto b {
+  font-style: italic;
+}
+.redes {
+  padding: 30px 0 60px 0;
+}
+.redes svg {
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.redes a:nth-child(1) svg {
+  animation: crescer 0.5s;
+}
+.redes a:nth-child(2) svg {
+  animation: crescer 1s;
+}
+.redes a:nth-child(3) svg {
+  animation: crescer 1.5s;
+}
+
+.redes svg:hover {
+  transform: scale(1.3);
+  transition: 0.4s;
+  cursor: pointer;
+}
+@media (max-width: 630px) {
+  .texto {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .sobreCtn {
+    margin: 30px 15px;
+  }
+  .redes {
+    padding: 20px 0 50px 0;
+  }
+}
+
+@keyframes surgir {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes crescer {
+  0% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,11 @@
+.erro {
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+  padding-bottom: 30px;
+}
+@media (max-width: 630px) {
+  .erro {
+    font-size: 14px;
+  }
+}

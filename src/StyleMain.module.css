@@ -1,0 +1,31 @@
+.titulo {
+  font-size: 20px;
+  padding-top: 30px;
+  font-weight: 400;
+  color: #505050;
+  animation: descer 1s;
+}
+.titulo::after {
+  content: '';
+  display: flex;
+  margin: 10px auto;
+  height: 2px;
+  width: 50px;
+  background-color: #4444;
+}
+@media (max-width: 530px) {
+  .titulo {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+}
+@keyframes descer {
+  0% {
+    opacity: 0;
+    padding-top: 0px;
+  }
+  100% {
+    opacity: 1;
+    padding-top: 30px;
+  }
+}

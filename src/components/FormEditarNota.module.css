@@ -1,0 +1,153 @@
+.formCtn {
+  width: 400px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.botaoFecharForm {
+  position: relative;
+  right: -188px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  padding: 6px;
+  background: transparent;
+}
+.botaoFecharForm:hover {
+  cursor: pointer;
+  background: var(--cinza3);
+}
+.titulo {
+  font-size: 20px;
+  padding-top: 0;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: var(--azulNegro);
+}
+.titulo::after {
+  content: '';
+  display: flex;
+  margin: 1rem auto;
+  height: 2px;
+  width: 50px;
+  background-color: #4444;
+}
+
+.form {
+  align-items: center;
+  text-align: justify;
+}
+
+.campos {
+  width: 100%;
+  font-size: 0.875rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem 0;
+  padding: 5px 0px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--roxo);
+}
+
+.form input::placeholder {
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.form input:hover,
+.form input:focus {
+  border-bottom: 2px solid var(--verdeClaro);
+  outline: none;
+  transition: 0.3s;
+}
+
+.botao {
+  display: flex;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  padding: 10px 20px;
+  margin-bottom: 2rem;
+  color: #fff;
+  background: var(--roxo);
+  transition: 0.4s;
+}
+.botao:hover {
+  background-color: var(--verdeClaro);
+  cursor: pointer;
+}
+
+/* Parte do seletor de cores */
+
+.cores {
+  display: flex;
+  margin-top: 6px;
+}
+
+.tituloCores {
+  font-size: 0.875rem;
+  padding-top: 2rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #000;
+}
+.tituloCores span {
+  content: '';
+  display: flex;
+  margin-top: 16px;
+  height: 2px;
+  width: 65px;
+  background: #4444;
+}
+
+.coresDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  margin: 1rem 10px 2rem 0;
+}
+.coresDiv span {
+  content: '';
+  height: 15px;
+  width: 15px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+.coresDiv input {
+  z-index: 2;
+  opacity: 0;
+}
+.coresDiv input:hover {
+  cursor: pointer;
+}
+
+.cor1 span {
+  background-color: #ffff;
+}
+.cor2 span {
+  background-color: #bbc904;
+}
+.cor3 span {
+  background-color: #dc762b;
+}
+.cor4 span {
+  background-color: #c94579;
+}
+.cor5 span {
+  background-color: #0e64f9;
+}
+.cor6 span {
+  background-color: #f9ee0e;
+}
+.cor7 span {
+  background-color: #e20000;
+}
+@media (max-width: 630px) {
+}

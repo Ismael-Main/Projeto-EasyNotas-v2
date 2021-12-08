@@ -1,0 +1,72 @@
+.NotasCtn {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  margin: 30px 38px;
+  animation: surgir 2s;
+}
+
+.totalNotas {
+  font-size: 14px;
+  padding: 20px 0 50px 0;
+  color: #505050;
+  animation: descer 0.3s;
+}
+.notasEncontradasCtn {
+  max-width: 600px;
+  margin: 0 auto;
+  animation: surgir 2s;
+}
+.notasEncontradas {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  padding: 0px 0 60px 0;
+  grid-gap: 35px;
+}
+
+/*  */
+@media (max-width: 830px) {
+  .notasEncontradas {
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    padding: 0px 0 60px 0;
+    grid-gap: 35px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 670px) {
+  .notasEncontradas {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    padding: 0px 0 60px 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 450px) {
+  .NotasCtn {
+    margin: 30px 15px;
+  }
+  .notasEncontradas {
+    grid-template-columns: 115px 115px;
+    grid-gap: 30px;
+  }
+}
+@keyframes surgir {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes descer {
+  0% {
+    opacity: 0;
+    padding-top: 0;
+  }
+  100% {
+    opacity: 1;
+    padding-top: 20px;
+  }
+}

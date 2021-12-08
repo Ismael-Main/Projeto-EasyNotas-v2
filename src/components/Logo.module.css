@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  transition: 0.4s;
+  height: 40px;
+  animation: surgirEsquerda 0.3s;
+}
+.logo {
+  transition: 0.4s;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.logo:hover {
+  transition: 0.4s;
+  font-style: italic;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.logo p {
+  font-size: 1.6rem;
+  color: #eee;
+}
+
+@media (max-width: 450px) {
+  .logo {
+    letter-spacing: 0;
+  }
+  .logo p {
+    font-size: 22px;
+    color: #eee;
+  }
+}
+@keyframes surgirEsquerda {
+  0% {
+    opacity: 0;
+    margin-left: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}

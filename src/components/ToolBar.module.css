@@ -1,0 +1,89 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 30px;
+  margin: 30px 36px 20px 36px;
+  height: 50px;
+  background-color: var(--verdeClaro);
+  animation: descer 0.5s;
+}
+.toolbar svg {
+  fill: #017279;
+  height: 30px;
+  transition: 0.3s;
+}
+
+.toolbar ul {
+  display: flex;
+}
+.toolbar li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 50px;
+  border-radius: 4px;
+  margin: 0 0 0 5px;
+  transition: 0.3s;
+}
+.toolbar li:nth-child(3) {
+  margin: 0 5px 0 0;
+}
+.botaoSair {
+  height: 40px;
+  width: 50px;
+  border-radius: 4px;
+  margin: 0 5px 0 5px;
+}
+.botaoSair a {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  transform: scaleX(-1);
+}
+
+.toolbar li a:hover,
+.botaoSair:hover {
+  background-color: var(--verdeHover);
+  transition: 0.3s;
+}
+
+.toolbar li a:hover > svg,
+.toolbar li a:hover svg path,
+.botaoSair:hover svg {
+  fill: var(--verdeClaro);
+  transition: 0.3s;
+}
+
+/**/
+
+@media (max-width: 450px) {
+  .toolbar {
+    margin-top: 30px;
+    margin: 30px 15px 20px 15px;
+  }
+  .toolbar li a {
+    margin: 0;
+  }
+  .botaoSair {
+    height: 40px;
+    width: 50px;
+    border-radius: 4px;
+    margin: 0;
+  }
+}
+
+@keyframes descer {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,72 @@
+.botaoCtn {
+  height: 30px;
+  width: 50px;
+}
+.botaoMobile {
+  display: flex;
+  align-items: center;
+  float: right;
+  height: 30px;
+  width: 50px;
+  background: transparent;
+  border: none;
+  transition: 0.3s;
+}
+.botaoMobile span {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 30px;
+  background-color: #fafafa;
+}
+.botaoMobile span::before {
+  content: '';
+  display: block;
+  margin-top: -10px;
+  height: 4px;
+  width: 45px;
+  background-color: #fafafa;
+}
+.botaoMobile span::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 45px;
+  margin-top: 16px;
+  background-color: #fafafa;
+}
+
+.botaoMobile:hover {
+  cursor: pointer;
+}
+.botaoMobile:hover > span {
+  width: 45px;
+  background-color: aqua;
+  transition: 0.3s;
+}
+.botaoMobile.ativo span {
+  background: transparent;
+  transition: 0.3s;
+}
+.botaoMobile.ativo span::before {
+  transform: rotate(-40deg);
+  margin-top: 0px;
+  transition: 0.3s;
+}
+.botaoMobile.ativo span::after {
+  transform: rotate(40deg);
+  margin-top: -4px;
+  transition: 0.3s;
+}
+
+@media (min-width: 900px) {
+  .botaoCtn {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .botaoCtn {
+    height: 25px;
+    width: 40px;
+  }
+}
